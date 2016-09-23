@@ -1,0 +1,24 @@
+{
+  "name": "concat-js",
+  "description": "Returns the concatenation of the elements in the supplied args.",
+  "main": "lib/index.js",
+  "authors": [
+    "Néstor Palafox <palafox.isc@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "str",
+    "concat",
+    "cat",
+    "join",
+    "array"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

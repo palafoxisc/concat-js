@@ -1,0 +1,21 @@
+{
+  "name": "concat-js",
+  "version": "1.0.0",
+  "description": "Returns the concatenation of the elements in the supplied args.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "Néstor Palafox <palafox.isc@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-coverage": "^0.3.38",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7"
+  }
+}

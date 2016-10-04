@@ -4,6 +4,8 @@ var CONFIG = require('./build.config');
 var gulp = require('gulp');
 var del = require('del');
 var KarmaServer = require('karma').Server;
+var uglify = require('gulp-uglify');
+var pump = require('pump');
 
 gulp.task('hello', function () {
   console.log('Hello World!');
@@ -23,4 +25,14 @@ gulp.task('test', function (done) {
   }, done).start();
 });
 
-gulp.task('default', ['clean', 'test']);
+gulp.task('compress', function (cb) {
+  pump([
+      gulp.src('lib/*.js'),
+      uglify(),
+      gulp.dest('dist')
+    ],
+    cb
+  );
+});
+
+gulp.task('default', ['clean', 'test', 'compress']);

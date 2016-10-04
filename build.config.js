@@ -2,6 +2,12 @@ var pkg = require('./package.json');
 
 module.exports = {
 
+  karma: {
+    confFile: '/karma.conf.js',
+    moduleName: 'concat-js',
+    files: ['lib/*.js']
+  },
+
   coverageDirectory: 'coverage',
 
   workingDir: ['coverage'],
